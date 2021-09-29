@@ -14,6 +14,10 @@ from pathlib import Path
 import os
 
 
+from django.core.management.utils import get_random_secret_key
+
+get_random_secret_key()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -22,10 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('LETTERS_APP_SECRET_KEY')
+SECRET_KEY = os.environ.get('LETTERS_APP_SECRET_KEY', 'django-insecure-n==dcfp#6x9!i*skoy5(0jln+!1z^hvv_140p*v^fbn4i+0hr8')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
+# DEBUG = True
 
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
@@ -149,3 +153,5 @@ EMAIL_USE_TLS = True
 
 EMAIL_HOST_USER = os.environ.get('MY_EMAIL')
 EMAIL_HOST_PASSWORD = os.environ.get('MY_EMAIL_APP_PASS')
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
