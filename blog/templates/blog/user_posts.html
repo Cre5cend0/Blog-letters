@@ -10,7 +10,14 @@
               <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
             </div>
             <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
+              {% with post.content|length as string_length %}
+                {% if string_length >= 200 %}
+                    {{ post.content|linebreaksbr|truncatewords:50}}
+                    <a class="view-more" href="{% url 'post-detail' post.id %}">view more</a>
+                {% else %}
+                    <p class="article-content">{{ post.content }}</p>
+                {% endif %}
+              {% endwith %}
           </div>
         </article>
     {% endfor %}
