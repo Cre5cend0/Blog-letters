@@ -36,6 +36,54 @@ ul {
   margin-bottom: 20px;
 }
 
+
+/* Start About Section */
+.about-img {
+    margin: 20px 0px;
+}
+
+.about-img img {
+    display: flex;
+    max-width:45.625rem;
+}
+
+.section-about {
+  padding: 10px 20px;
+  padding-bottom: 0;
+}
+
+.world-img {
+    padding-left: 0;
+}
+
+.world-img img {
+    max-width: 340px;
+    height: 16.75rem;
+}
+
+.section-world {
+    padding-bottom:0;
+}
+
+.privacy-img {
+    padding-left: 0;
+    padding-right:0;
+}
+
+.privacy-img img {
+    min-width: 365px;
+    height: 12.25rem;
+    margin-left:25px;
+}
+
+.section-privacy {
+    max-width: 340px;
+    padding-bottom:0;
+    margin-bottom: 5vh;
+    padding-right:0;
+}
+/* End About Section */
+
 .article-title {
   color: #444444;
 }

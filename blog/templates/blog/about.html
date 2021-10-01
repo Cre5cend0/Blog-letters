@@ -1,35 +1,52 @@
 
 {% extends "blog/base.html" %}
 {% block content %}
-<body>
-<h2>About Cats</h2>
-<main>
-  <p>Click here to view more <a href="#">cat photos</a>.</p>
 
-  <a href="#"><img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
-<div>
-  <p>Things cats love:</p>
-  <ul>
-    <li>Cat nip</li>
-    <li>Laser pointers</li>
-    <li>Lasagna</li>
-  </ul>
-  <p>Top 3 things cats hate:</p>
-  <ol>
-    <li>Flea treatment</li>
-    <li>Thunder</li>
-    <li>Other cats</li>
-  </ol>
-</div>
-  <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
-    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
-    <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
-    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
-    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
-    <input type="text" placeholder="cat photo URL" required>
-    <button type="submit">Submit</button>
-  </form>
-</main>
-</body>
+  <h2>Express Yourself!</h2>
+
+  <div class="about-img">
+    <img src="../media/about.jpg" alt="Freedom is everything">
+  </div>
+
+  <article class="media content-section section-about">
+    <p>
+      Letters is a blog for anyone who wants to express their thoughts without any fear of being judged, misused,
+      or complained about.
+      You might have had a feeling that you want to share something that happened with you, maybe rant about your
+      work or boss or even take a dig at the government for corruption and misuse of power.
+    </p>
+  </article>
+
+  <div class="container">
+    <div class="row">
+      <article class="col-6 world-img">
+        <img src="../media/world.jpg" alt="The world is ma familia">
+      </article>
+      <article class="col-6 media content-section section-world">
+        <p>
+          Or maybe you want the world to hear you without knowing who you are, but instead just listen,
+          with no prejudice or stereotyping at heart.
+          <br>
+          And if you share it on social media, it might get lost in algorithms, or flooded with supporters and you develop
+          "likes" addiction or get suppressed with haters and condescending comments, and you can't maintain anonymity and peace of mind.
+        </p>
+      </article>
+    </div>
+  </div>
+
+  <div class="container container-about">
+    <div class="row">
+      <article class="col-6 media content-section section-privacy">
+        <p>
+          What you get here is not some artificial dopamine hit with likes or anxiety by watching other's success.
+          What you get is the pure joy of writing something that anyone in this world can read about.
+          Bless you for talking about it and learn from your experiences.
+        </p>
+      </article>
+      <div class="col-6 privacy-img">
+        <img src="../media/privacy.jpg" alt="Your Data is Secure">
+      </div>
+    </div>
+  </div>
+
 {% endblock content %}
