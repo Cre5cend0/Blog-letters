@@ -1,6 +1,5 @@
 # letters
-
-### Letters is a blog for anyone who wants to express their thoughts without any fear of being judged, misused, or complained about.
+Letters is a blog for anyone who wants to express their thoughts without any fear of being judged, misused, or complained about.
 
 > Or maybe you want the world to hear you without knowing who you are, but instead just listen, with no prejudice or stereotyping at heart.
 
