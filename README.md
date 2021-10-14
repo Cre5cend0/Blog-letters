@@ -7,7 +7,7 @@ Letters is a blog for anyone who wants to express their thoughts without any fea
 >> or get suppressed with haters and condescending comments, and you can't maintain anonymity and peace of mind.
 
 >>> What you get here is not some artificial dopamine hit with likes or anxiety by watching other's success.
-What you get is the pure joy of writing something that anyone in this world can read about.
-Bless you for talking about it and learn from your experiences.
+What you get is the pure joy of writing something that anyone in this world can read about,
+bless you for talking about it and learn from your experiences.
 
 Preview: https://blog-letters.herokuapp.com/
