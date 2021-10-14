@@ -36,6 +36,12 @@ ul {
   margin-bottom: 20px;
 }
 
+@media only screen and (max-width:420px) {
+    .content-section {
+        font-size: .8rem;
+    }
+}
+
 
 /* Start About Section */
 .about-img {
@@ -44,7 +50,7 @@ ul {
 
 .about-img img {
     display: flex;
-    max-width:45.625rem;
+    width: 100%;
 }
 
 .section-about {
@@ -54,11 +60,14 @@ ul {
 
 .world-img {
     padding-left: 0;
+    padding-right: 0;
 }
 
 .world-img img {
-    max-width: 340px;
-    height: 16.75rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0rem 1rem 1.2rem 0rem;
 }
 
 .section-world {
@@ -66,22 +75,30 @@ ul {
 }
 
 .privacy-img {
-    padding-left: 0;
     padding-right:0;
+    padding-left: 0;
+
 }
 
 .privacy-img img {
-    min-width: 365px;
-    height: 12.25rem;
-    margin-left:25px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0rem 0rem 2.5rem 0rem;
 }
 
 .section-privacy {
-    max-width: 340px;
+    max-width: 349px;
     padding-bottom:0;
-    margin-bottom: 5vh;
-    padding-right:0;
+    margin: 0rem 1rem 2.5rem 0rem;
 }
+
+@media only screen and (max-width:420px) {
+    .section-privacy {
+        max-width: 169px;
+    }
+}
+
 /* End About Section */
 
 .article-title {
@@ -89,7 +106,12 @@ ul {
 }
 
 a.view-more {
-    color: #828282;
+    color: #5f788a;
+    text-decoration: none;
+}
+
+a.view-more:hover {
+    color: #444444;
 }
 
 .list-group a:hover {
@@ -99,12 +121,25 @@ a.view-more {
 }
 
 a.article-title:hover {
-  color: #428bca;
+  color: #5f788a;
   text-decoration: none;
+}
+
+@media only screen and (max-width:420px) {
+    .article-title {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 }
 
 .article-content {
   white-space: pre-line;
+}
+
+@media only screen and (max-width:420px) {
+    .article-content {
+        font-size: .8rem;
+    }
 }
 
 .article-img {
@@ -113,14 +148,25 @@ a.article-title:hover {
   margin-right: 16px;
 }
 
+@media only screen and (max-width:420px) {
+    .article-img {
+        height: 60px;
+        width: 60px;
+    }
+}
+
 .article-metadata {
   padding-bottom: 1px;
   margin-bottom: 4px;
   border-bottom: 1px solid #e3e3e3
 }
 
+.article-metadata > a {
+    color: #FF4D00;
+}
+
 .article-metadata a:hover {
-  color: #333;
+  color: #272121;
   text-decoration: none;
 }
 
@@ -135,6 +181,13 @@ a.article-title:hover {
   width: 125px;
   margin-right: 20px;
   margin-bottom: 16px;
+}
+
+@media only screen and (max-width:420px) {
+    .account-img {
+        height: 75px;
+        width: 75px;
+    }
 }
 
 .account-heading {
